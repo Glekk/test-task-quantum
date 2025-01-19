@@ -9,17 +9,18 @@
 
 ## Solution Overview
 This solution is aimed to solve Named Entity Recognition (NER) task for the identification of mountain names inside the texts.  
-The solution is based on the BERT model (`dslim/bert-base-NER` and `dslim/bert-large-NER`). I used pre-trained on NER BERT model from the Hugging Face and fine-tuned it on the NER dataset with mountain names (`Gepe55o/mountain-ner-dataset`).  
+The solution is based on the BERT model (`dslim/bert-base-NER` and `dslim/bert-large-NER`). I used pre-trained on NER BERT models from the Hugging Face and fine-tuned it on the NER dataset with mountain names (`Gepe55o/mountain-ner-dataset`).  
 The dataset was preprocessed to contain B-MOUNT, I-MOUNT and O labels.
 It contains roughly 88000 test and 22000 train samples from which 30000 samples were used for training, 10000 samples - for validation and 10000 - for testing.  
-The model was trained for 3 epochs with a batch size of 8.  
-The model achieved an F1 score of 0.8994 on train set, 0.8028 on validation set and 0.7988 on testing set.  
-The model was saved to Hugging Face model hub and could be accessed by the name `glekk/bert-mountains-ner` or `glekk/bert-large-mountains-ner`.
+The models was trained for 3 epochs with a batch size of 8.  
+The base model achieved an F1 score of 0.8994 on train set, 0.8028 on validation set and 0.7988 on testing set. 
+The large model achieved an F1 score of 0.9355 on train set, 0.8317 on validation set and 0.8287 on testing set.
+The models was saved to Hugging Face model hub and could be accessed by the name `glekk/bert-mountains-ner` or `glekk/bert-large-mountains-ner`.
 
 ## Project Structure 
 - `checkpoints` folder (not included in the repository) - contains the saved checkpoints during training
 - `data` folder - contains the preprocessed data
-- `models` folder (not included in the repository) - contains the saved final model
+- `models` folder (not included in the repository) - contains the saved final models
 - `notebooks` folder - contains the notebooks with dataset creation and demonstration of inference
 - `src` folder - contains the source code
     - `train.py` - script for training the model
@@ -49,7 +50,7 @@ pip install -r requirements.txt
 ## Usage
 - Before all you need to set up the environment variables in .env file, there is .env.example as an example.
 - The data is already preprocessed and saved in the data folder.
-- You could change MODEL_LOCAL_PATH to `glekk/bert-mountains-ner` or `glekk/bert-large-mountains-ner` to directly access the model I trained or it as it is and train model by yourself.
+- You could change MODEL_LOCAL_PATH to `glekk/bert-mountains-ner` or `glekk/bert-large-mountains-ner` to directly access the models I trained or train model by yourself.
 - To run the training you need to run train.py in src folder (you can run it from different folder, but then you would need to change paths in .env):
 ```
 cd src
