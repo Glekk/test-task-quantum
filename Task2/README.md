@@ -47,7 +47,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-- Before all you need to set up the environment variables in .env file in src folder, there is .env.example with the example of the file.
+- Before all you need to set up the environment variables in .env file, there is .env.example as an example.
 - The data is already preprocessed and saved in the data folder.
 - To run the inference you need go to the src folder and run the inference.py script. It has the next options:
 ```

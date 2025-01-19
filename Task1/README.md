@@ -47,7 +47,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-- Before all you need to set up the environment variables in .env file in src folder, there is .env.example with the example of the file.
+- Before all you need to set up the environment variables in .env file, there is .env.example as an example.
 - The data is already preprocessed and saved in the data folder.
 - You could change MODEL_LOCAL_PATH to `glekk/bert-mountains-ner` or `glekk/bert-large-mountains-ner` to directly access the model I trained or it as it is and train model by yourself.
 - To run the training you need to run train.py in src folder (you can run it from different folder, but then you would need to change paths in .env):
