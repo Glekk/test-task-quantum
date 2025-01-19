@@ -1,0 +1,58 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "mountain-ner-dataset",
+  "dataset_size": 149318460,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/Gepe55o/mountain-ner-dataset@c11aeccb05249990a8de814e95f069d098f0e6c3/data/train-00000-of-00001.parquet": {
+      "num_bytes": 27508405,
+      "checksum": null
+    },
+    "hf://datasets/Gepe55o/mountain-ner-dataset@c11aeccb05249990a8de814e95f069d098f0e6c3/data/test-00000-of-00001.parquet": {
+      "num_bytes": 6855401,
+      "checksum": null
+    }
+  },
+  "download_size": 34363806,
+  "features": {
+    "tokens": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "tags": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 183682266,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 119591896,
+      "num_examples": 88619,
+      "dataset_name": "mountain-ner-dataset"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 29726564,
+      "num_examples": 22110,
+      "dataset_name": "mountain-ner-dataset"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

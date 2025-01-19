@@ -1,0 +1,8 @@
+kornia==0.8.0
+kornia_moons==0.2.9
+matplotlib==3.10.0
+numpy==2.2.2
+opencv_python==4.10.0.84
+opencv_python_headless==4.10.0.84
+python-dotenv==1.0.1
+torch==2.5.1+cu118
